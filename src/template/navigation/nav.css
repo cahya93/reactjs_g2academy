@@ -1,0 +1,66 @@
+.nav {
+  /* border: 1px solid red; */
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: x-large;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin: 10px 0; */
+}
+
+.nav > .menu {
+  padding: 5px 15px;
+  /* border: 1px solid grey; */
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nav > .menu:last-child {
+  margin-right: 0;
+}
+#header {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: x-large;
+  padding: 10px;
+}
+#header .logo {
+  font-size: 25px;
+  /* margin: 0 0; */
+  margin: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: italic;
+}
+
+#header .logo a {
+  font-size: 25px;
+  /* margin: 0 0; */
+  margin: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+}
+
+#header .website-menu {
+  float: right;
+}
+
+#header .website-menu a {
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+}
+
+#header .website-menu a:hover {
+  color: chartreuse;
+}
