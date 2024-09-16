@@ -1,0 +1,78 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./VeganStylePersonalUse-5Y58.ttf);
+}
+.navbar {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: x-large;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar > .logo {
+  float: left;
+  color: aliceblue;
+}
+
+.navbar > .nav {
+  float: right;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar > .nav > .menu {
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbar > .nav > .menu:last-child {
+  margin-right: 0;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.topnav > .logo {
+  float: left;
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  font-size: x-large;
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-family: myFirstFont;
+  background: -webkit-linear-gradient(yellow, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.topnav-right > .menu {
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.topnav-right > .menu:last-child {
+  margin-right: 0;
+}

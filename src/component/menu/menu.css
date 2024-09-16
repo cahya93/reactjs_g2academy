@@ -1,0 +1,6 @@
+.menu {
+  float: right;
+}
+.menu.active {
+  color: green;
+}
