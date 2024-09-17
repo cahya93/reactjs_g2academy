@@ -1,22 +1,47 @@
-/* eslint-disable no-unused-vars */
 import React, { Component } from "react";
-// import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Nav, Body } from "./template";
 import "./App.css";
-import Konten from "./Konten";
-import About from "./About";
-import Latihan from "./Latihan";
-import Login from "./Login";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: "home",
+      loginStatus: false,
+      email: "",
+    };
+  }
+  changePage = (page) => {
+    this.setState({
+      currentPage: page,
+    });
+  };
+  changeStatusLogin = (status, email) => {
+    this.setState({
+      loginStatus: status,
+      email: email,
+      currentPage: "json",
+    });
+  };
+
   render() {
     return (
-      <Router>
-        <Route exact path="/" component={Konten}></Route>
-        <Route path="/about" component={About}></Route>
-        <Route path="/latihan" component={Latihan}></Route>
-        <Route path="/login" component={Login}></Route>
-      </Router>
+      <>
+        <Nav
+          doLogin={this.changeStatusLogin}
+          login={this.state.loginStatus}
+          page={this.state.currentPage}
+          goToPage={this.changePage}
+        />
+        <Body
+          page={this.state.currentPage}
+          login={this.state.session}
+          goToPage={this.changePage}
+          doLogin={this.changeStatusLogin}
+          datas={this.state.email}
+          loggedIn={this.state.loginStatus}
+        />
+      </>
     );
   }
 }

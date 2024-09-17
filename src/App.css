@@ -50,7 +50,7 @@ body {
   margin: auto;
   padding: 0 20px;
   margin-top: 10px;
-  min-height: 90%;
+  min-height: 100%;
   position: relative;
 }
 .btn-update {
@@ -119,14 +119,14 @@ body {
 .mySlides {
   display: none;
 }
-div.pagination {
+.pagination {
   display: flex;
   justify-content: center !important;
   align-items: center !important;
   margin-top: 10px;
 }
 
-div.pagination span {
+.pagination span {
   padding: 5px 10px;
   /* border: 1px solid grey; */
   margin-right: 10px;
@@ -134,10 +134,10 @@ div.pagination span {
   cursor: pointer;
 }
 
-div.pagination span:last-child {
+.pagination span:last-child {
   margin-right: 0;
 }
 
-div.pagination span.active {
+.pagination span.active {
   color: blue;
 }
